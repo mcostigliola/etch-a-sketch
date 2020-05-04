@@ -1,0 +1,78 @@
+:root{
+    --rowNum:16;
+    --colNum:16;
+    --gridHeight:60%;
+    --gridWidth: 60%;
+}
+
+html{
+    font-family: 'Cabin Sketch', cursive;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-image: url('https://cdn2.vectorstock.com/i/1000x1000/91/86/texture-and-background-sketch-drawn-by-pencil-vector-24709186.jpg');
+}
+
+#container-grid{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+
+#top-bar{
+    margin-bottom: 3%;
+}
+
+h1{
+   font-size: 5rem;
+   background-color: white;
+   border-radius: 50px;
+}
+
+.grid{
+    margin: auto;
+    display: grid;
+    width: var(--gridWidth);
+    height: var(--gridHeight);
+    grid-template-columns: repeat(var(--colNum), auto);
+    grid-template-rows: repeat(var(--coloRow), auto);
+    align-self: flex-end;
+    background-color: white;
+    border: 0.5rem solid black;
+
+}
+
+.gridItem{
+    grid-column-start: auto;
+    grid-row-start: auto;
+    /* border: 1px solid black; */
+    /* margin:5px; */
+}
+
+.gridItem:hover,
+.blackItem{
+    background-color: black;
+}
+
+button{
+    font-family: inherit;
+    width: 7rem;
+    height: 4rem;
+    margin: 0 2rem;
+    background-color: lemonchiffon;
+    font-size: 18px;
+    border-style: dotted;
+}
+
+button:hover{
+    background-color: lightseagreen;
+    border-style: double;
+    cursor: pointer;
+}
+
