@@ -1,10 +1,6 @@
 const grid_num = 16;
 const grid = document.querySelector('.grid');
 
-
-console.log('funziono');
-
-
 // Create grid
 function createGrid(grid_num){
     let numberGrid = grid_num * grid_num;
@@ -34,7 +30,6 @@ function reset(){
     while(hoverItems[0]){
     hoverItems[0].classList.remove('blackItem');
     }
-    console.log('premuto reset')
 
 }
 
